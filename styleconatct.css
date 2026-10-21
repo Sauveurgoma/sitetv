@@ -1,0 +1,289 @@
+
+/* =====================================
+   AUTHENTIC TV — PAGE CONTACT
+   ===================================== */
+
+.contact-intro {
+  padding-top: 55px;
+  padding-bottom: 35px;
+}
+
+.contact-section {
+  padding: 35px 0 65px;
+  background: var(--fond, #f5f7fa);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  border: 1px solid #e1e6eb;
+  box-shadow: 0 8px 24px rgba(16, 43, 67, 0.06);
+}
+
+.contact-card h2 {
+  color: #102b43;
+  margin: 0 0 25px;
+  font-family: Georgia, serif;
+  font-size: 27px;
+}
+
+.contact-card h3 {
+  color: #102b43;
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.contact-card p {
+  line-height: 1.7;
+}
+
+.contact-info {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin: 25px 0;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: #f6edda;
+  color: #b88a36;
+  font-size: 22px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #b88a36;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-note {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f5f7fa;
+  border-left: 4px solid #c6a15b;
+  border-radius: 4px;
+}
+
+/* FORMULAIRE */
+
+.contact-card form label {
+  display: block;
+  margin: 16px 0 7px;
+  color: #102b43;
+  font-weight: 600;
+}
+
+.contact-card form input,
+.contact-card form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d7dee5;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #263746;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-card form input:focus,
+.contact-card form textarea:focus {
+  border-color: #c6a15b;
+  box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.15);
+}
+
+.contact-card form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contact-card form .btn {
+  margin-top: 20px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.form-note {
+  margin-top: 18px;
+  color: #687784;
+  font-size: 13px;
+}
+
+/* LOCALISATION */
+
+.localisation-section {
+  padding: 65px 0;
+  background: #ffffff;
+}
+
+.localisation-heading {
+  margin-bottom: 30px;
+}
+
+.localisation-heading .section-title {
+  margin-bottom: 15px;
+}
+
+.map-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9px;
+  border: 1px solid #dce3e8;
+  background: #f5f7fa;
+  box-shadow: 0 8px 25px rgba(16, 43, 67, 0.08);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+}
+
+.location-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 25px;
+  padding: 25px;
+  background: #f5f7fa;
+  border-radius: 8px;
+  border-left: 4px solid #c6a15b;
+}
+
+.location-details h3 {
+  margin: 0 0 10px;
+  color: #102b43;
+}
+
+.location-details p {
+  margin: 0;
+  line-height: 1.8;
+  color: #455564;
+}
+
+.location-details strong {
+  font-size: 13px;
+  color: #8b6728;
+}
+
+/* ADAPTATION AUX TÉLÉPHONES ET TABLETTES */
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .localisation-section {
+    padding: 45px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-intro {
+    padding-top: 35px;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .map-container iframe {
+    height: 320px;
+  }
+
+  .location-details {
+    padding: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-card h2 {
+    font-size: 23px;
+  }
+}
+
+
+/* LOCALISATION — AUTHENTIC TV */
+
+.localisation {
+  padding: 60px 0;
+  background: var(--fond);
+}
+
+.carte-localisation {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #dce3e8;
+  background: white;
+  box-shadow: 0 8px 25px #102b4312;
+}
+
+.carte-localisation iframe {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.actions-localisation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.actions-localisation p {
+  line-height: 1.8;
+  color: var(--texte);
+}
+
+@media (max-width: 600px) {
+  .localisation {
+    padding: 40px 0;
+  }
+
+  .carte-localisation iframe {
+    height: 320px;
+  }
+
+  .actions-localisation {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
